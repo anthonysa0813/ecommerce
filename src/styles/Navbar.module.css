@@ -1,0 +1,44 @@
+.header {
+    background-color: var(--white);
+}
+
+.menu {
+    display: flex;
+    padding-block: 24px;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+    flex: 1 0 50%;
+    
+}
+
+.menu nav {
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+
+}
+
+
+.searchGrid {
+    display: flex;
+    flex: 1 0 50%;
+}
+
+.searchGrid input {
+    width: 100%;
+    padding: 8px;
+    height: 40px;
+    border: none;
+    border: 2px solid var(--gray400);
+}
+
+.searchGrid button {
+    height: 40px;
+    padding: 10px 15px;
+    border: none;
+    background-color: var(--pink-primary);
+    color: var(--white);
+}

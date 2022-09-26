@@ -1,0 +1,28 @@
+.heroGrid {
+    background-color: var(--blue200);
+    padding-block: 24px;
+}
+
+.heroContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+}
+
+.offerContainer {
+    display: flex;
+    padding: 40px;
+    color: var(--white);
+}
+
+.gradient-left {
+    background-image: var(--gradient100);
+}
+
+.gradient-right {
+    background-image: var(--gradient200);
+}
+
+.text span {
+    text-decoration: underline;
+}

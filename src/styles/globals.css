@@ -1,0 +1,83 @@
+@import url("../public/style.css");
+
+:root {
+  --gray400: #EBEBEB;
+  --gray-light: #EEEFFB;
+  --gray300: #F4F4FC;
+  --gray200: #8A8FB9;
+  --gray100: #8A8FB9;
+  --blue200: #4853C2;
+  --blue300: #151875;
+  --gradient100: linear-gradient(105.15deg, #5465FF 0%, #B654EF 100%);
+  --gradient200: linear-gradient(105.15deg, #4E5AFF 0%, #5D8DFF 100%);
+  --pink-primary: #FB2E86;
+  --white: white;
+} 
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--gray400);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.debug {
+  border: 3px solid brown;
+}
+
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.btn {
+  border: none;
+  padding: 8px 32px;
+}
+
+.pink-fill {
+  background-color: var(--pink-primary);
+  color: var(--white);
+}
+
+.pink-outline {
+  border: 2px solid var(--pink-primary);
+  color: var(--pink-primary);
+  background-color: var(--white);
+}
+
+
+.icon-carrito {
+  position: relative;
+}
+
+.icon-carrito > span {
+  color: red;
+  width: 16px;
+  height: 16px;
+  background-color: red;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
