@@ -51,15 +51,40 @@ a {
   padding: 8px 32px;
 }
 
+.btn-full {
+  width: 100%;
+}
+
+.mt-1 {
+  margin-top: 1.5rem;
+}
 .pink-fill {
   background-color: var(--pink-primary);
   color: var(--white);
 }
 
+.pink-fill:hover {
+  cursor: pointer;
+}
+.pink-outline:hover {
+  cursor: pointer;
+}
+
+.pink-fill:active {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+
 .pink-outline {
   border: 2px solid var(--pink-primary);
   color: var(--pink-primary);
   background-color: var(--white);
+}
+
+.pink-outline:active {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 }
 
 
@@ -81,3 +106,4 @@ a {
   top: -10px;
   right: -10px;
 }
+

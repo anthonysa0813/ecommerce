@@ -35,3 +35,39 @@
     width: 100%;
     object-fit: cover;
 }
+
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.formContainer {
+    background-color: var(--gray300);
+    border-radius: 3px;
+    padding: 1.5rem;
+}
+
+.subTotal {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #E8E6F1;
+}
+
+
+.subTotal:nth-child(2) {
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.personalInfoGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 48px 48px;
+    gap: 1rem;
+    padding-block-start: 1rem;
+}
+
+.personalInfoGrid input:nth-child(3) {
+    grid-column: 1/-1;
+}

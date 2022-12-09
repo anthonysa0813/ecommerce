@@ -25,3 +25,20 @@ export interface CartInterface {
     products: ProductInterface[] | [],
     total: number 
 }
+
+
+export interface PersonalInfoCard {
+    name: string,
+    lastName: string,
+    email: string,
+    numberCard: string,
+    date: string,
+    cvc: string
+}
+
+export interface OptConfetti {
+    spread: number,
+    startVelocity?: number,
+    decay?:number,
+    scalar?: number,
+}

@@ -22,6 +22,7 @@
     justify-content: center;
     row-gap: 24px;
 }
+
 .title {
     font-style: normal;
     font-weight: 700;
@@ -29,7 +30,13 @@
     line-height: 27px;
 }
 
+.title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .extraInfo {
     display: flex;
     column-gap: 8px;
+    align-items: center;
 }

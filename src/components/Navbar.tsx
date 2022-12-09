@@ -43,8 +43,8 @@ const Navbar = () => {
                         <Link href="/">
                             <a href="">Contacto</a>
                         </Link >
-                        <i className="icon-carrito">
-                        <span>{context?.cartGlobal.products.length}</span>
+                        <i className="icon-carrito" onClick={() => router.push("/cart")}>
+                            <span>{context?.cartGlobal.products.length}</span>
                         </i>
                     </nav>
                 </div>

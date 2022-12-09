@@ -9,13 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "canvas-confetti": "^1.5.1",
     "mongoose": "^6.6.1",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-stars": "^2.2.5"
+    "react-stars": "^2.2.5",
+    "react-toastify": "^9.0.8"
   },
   "devDependencies": {
+    "@types/canvas-confetti": "^1.4.3",
     "@types/node": "18.7.20",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
