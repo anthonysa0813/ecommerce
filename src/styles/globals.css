@@ -1,19 +1,18 @@
 @import url("../public/style.css");
 
 :root {
-  --gray400: #EBEBEB;
-  --gray-light: #EEEFFB;
-  --gray300: #F4F4FC;
-  --gray200: #8A8FB9;
-  --gray100: #8A8FB9;
-  --blue200: #4853C2;
+  --gray400: #ebebeb;
+  --gray-light: #eeeffb;
+  --gray300: #f4f4fc;
+  --gray200: #8a8fb9;
+  --gray100: #8a8fb9;
+  --blue200: #4853c2;
   --blue300: #151875;
-  --gradient100: linear-gradient(105.15deg, #5465FF 0%, #B654EF 100%);
-  --gradient200: linear-gradient(105.15deg, #4E5AFF 0%, #5D8DFF 100%);
-  --pink-primary: #FB2E86;
+  --gradient100: linear-gradient(105.15deg, #5465ff 0%, #b654ef 100%);
+  --gradient200: linear-gradient(105.15deg, #4e5aff 0%, #5d8dff 100%);
+  --pink-primary: #fb2e86;
   --white: white;
-} 
-
+}
 
 html,
 body {
@@ -24,7 +23,12 @@ body {
   background-color: var(--gray400);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -42,7 +46,8 @@ a {
 }
 
 .wrapper {
-  width: 70%;
+  width: 100%;
+
   margin: 0 auto;
 }
 
@@ -75,7 +80,6 @@ a {
   transition: all 0.3s ease;
 }
 
-
 .pink-outline {
   border: 2px solid var(--pink-primary);
   color: var(--pink-primary);
@@ -86,7 +90,6 @@ a {
   transform: scale(1.1);
   transition: all 0.3s ease;
 }
-
 
 .icon-carrito {
   position: relative;
@@ -107,3 +110,14 @@ a {
   right: -10px;
 }
 
+@media screen and (min-width: 768px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    width: 70%;
+  }
+}

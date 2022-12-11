@@ -1,28 +1,36 @@
 .heroGrid {
-    background-color: var(--blue200);
-    padding-block: 24px;
+  background-color: var(--blue200);
+  padding-block: 24px;
+  overflow-x: auto;
 }
 
-.heroContainer{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 24px;
+.heroContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 24px;
+  min-width: 600px;
 }
 
 .offerContainer {
-    display: flex;
-    padding: 40px;
-    color: var(--white);
+  display: flex;
+  padding: 10px;
+  color: var(--white);
+  width: 100%;
 }
 
 .gradient-left {
-    background-image: var(--gradient100);
+  background-image: var(--gradient100);
 }
 
 .gradient-right {
-    background-image: var(--gradient200);
+  background-image: var(--gradient200);
 }
 
 .text span {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+@media screen and (min-width: 768px) {
+  .offerContainer {
+    padding: 40px;
+  }
 }

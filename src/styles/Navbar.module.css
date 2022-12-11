@@ -1,44 +1,80 @@
 .header {
-    background-color: var(--white);
+  background-color: var(--white);
+  padding-inline: 1rem;
 }
 
 .menu {
-    display: flex;
-    padding-block: 24px;
+  display: flex;
+  padding-block: 24px;
 }
 .navigation {
-    display: flex;
-    align-items: center;
-    column-gap: 48px;
-    flex: 1 0 50%;
-    
+  display: none;
+  align-items: center;
+  column-gap: 48px;
+  flex: 1 0 50%;
 }
 
 .menu nav {
-    display: flex;
-    align-items: center;
-    column-gap: 48px;
-
+  display: flex;
+  align-items: center;
+  column-gap: 48px;
 }
 
-
 .searchGrid {
-    display: flex;
-    flex: 1 0 50%;
+  display: flex;
+  flex: 1 0 50%;
 }
 
 .searchGrid input {
-    width: 100%;
-    padding: 8px;
-    height: 40px;
-    border: none;
-    border: 2px solid var(--gray400);
+  width: 100%;
+  padding: 8px;
+  height: 40px;
+  border: none;
+  border: 2px solid var(--gray400);
 }
 
 .searchGrid button {
-    height: 40px;
-    padding: 10px 15px;
-    border: none;
-    background-color: var(--pink-primary);
-    color: var(--white);
+  height: 40px;
+  padding: 10px 15px;
+  border: none;
+  background-color: var(--pink-primary);
+  color: var(--white);
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  flex: 1 0 50%;
+}
+
+.field i {
+  order: 2;
+}
+
+.field svg {
+  order: 3;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+  }
+
+  .menu {
+    column-gap: 2rem;
+  }
+
+  .field {
+    column-gap: 2rem;
+  }
+
+  .field i {
+    order: -1;
+    /* flex: 1 0 50%; */
+  }
+
+  .field svg {
+    display: none;
+  }
 }

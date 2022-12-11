@@ -1,4 +1,7 @@
-
 .main {
-    padding-block-start: 40px;
+  padding-block-start: 40px;
+}
+
+.mainContainer {
+  padding: 1rem;
 }
